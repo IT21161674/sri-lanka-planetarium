@@ -1,0 +1,49 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .welcome-page video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  h1 {
+    font-family: 'Star Trek', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .language-selection button {
+    background-color: rgba(21, 200, 5, 0.5);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .language-selection button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
