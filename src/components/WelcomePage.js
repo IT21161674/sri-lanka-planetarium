@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import '../styles/WelcomePage.css';
 
 const WelcomePage = () => {
   return (
     <div className="welcome-page">
+      {/* Container for the logo and flag */}
+      <div className="logo-flag-container">
+        {/* National logo */}
+        <img src="national-logo.png" alt="National Logo" className="national-logo" />
+        
+        {/* National flag */}
+        <img src="national-flag.png" alt="National Flag" className="national-flag" />
+      </div>
+      
       {/* Background video */}
       <video autoPlay loop muted>
         <source src="/moving-stars.mp4" type="video/mp4" />

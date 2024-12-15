@@ -1,13 +1,14 @@
 .welcome-page {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Keeps content aligned at the top */
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensures it covers at least the full height of the viewport */
     text-align: center;
     color: white;
     position: relative;
     overflow: hidden;
+    padding-top: 20px; /* Keeps some space at the top */
   }
   
   .welcome-page video {
@@ -20,9 +21,27 @@
     z-index: -1;
   }
   
+  /* Container for logo and flag side by side */
+  .logo-flag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Space between logo/flag and greeting */
+  }
+  
+  .national-logo {
+    max-width: 200px;
+    margin: 0 60px;
+  }
+  
+  .national-flag {
+    max-width: 350px;
+    margin: 0 60px;
+  }
+  
   h1 {
     font-family: 'Arial', sans-serif;
-    font-size: 2rem; /* Adjust this value as needed */
+    font-size: 2rem;
     margin: 10px;
     animation: fadeIn 2s ease-out;
   }
@@ -30,6 +49,11 @@
   @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+  }
+  
+  /* Increased space between greetings and buttons */
+  .language-selection {
+    margin-top: 30px; /* Adds space between the greetings and buttons */
   }
   
   .language-selection button {
@@ -41,9 +65,25 @@
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
   }
   
   .language-selection button:hover {
     background-color: rgba(0, 0, 0, 0.7);
+    animation: sparkle 1.5s infinite;
+  }
+  
+  @keyframes sparkle {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3);
+    }
   }
   
