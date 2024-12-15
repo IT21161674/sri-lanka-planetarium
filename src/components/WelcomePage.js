@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import '../styles/WelcomePage.css';
 
 const WelcomePage = () => {
-  const [language, setLanguage] = useState("English");
-
-  const handleLanguageChange = (lang) => {
-    setLanguage(lang);
-    // Optionally, you can display content in the selected language.
-  };
-
   return (
     <div className="welcome-page">
       {/* Background video */}
@@ -17,12 +10,15 @@ const WelcomePage = () => {
         Your browser does not support the video tag.
       </video>
 
+      {/* Greetings in all three languages */}
+      <h1>ශ්‍රී ලංකා ග්‍රහලෝකාගාරය වෙත ඔබව සාදරයෙන් පිළිගනිමු!</h1>
+      <h1>இலங்கை கோளரங்கத்திற்கு வரவேற்கிறோம்!</h1>
       <h1>Welcome to the Sri Lanka Planetarium!</h1>
       
       <div className="language-selection">
-        <button onClick={() => handleLanguageChange("Sinhala")}>සිංහල</button>
-        <button onClick={() => handleLanguageChange("Tamil")}>தமிழ்</button>
-        <button onClick={() => handleLanguageChange("English")}>English</button>
+        <button>සිංහල</button>
+        <button>தமிழ்</button>
+        <button>English</button>
       </div>
     </div>
   );

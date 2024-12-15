@@ -21,9 +21,9 @@
   }
   
   h1 {
-    font-family: 'Star Trek', sans-serif;
-    text-align: center;
-    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem; /* Adjust this value as needed */
+    margin: 10px;
     animation: fadeIn 2s ease-out;
   }
   
