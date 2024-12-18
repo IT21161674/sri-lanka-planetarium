@@ -1,7 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import '../styles/WelcomePage.css';
 
 const WelcomePage = () => {
+  const navigate = useNavigate();
+
+  const handleLanguageSelect = (language) => {
+    if (language === "sinhala") {
+      navigate("/sinhala");
+    } else if (language === "tamil") {
+      navigate("/tamil");
+    } else if (language === "english") {
+      navigate("/english");
+    }
+  };
+
   return (
     <div className="welcome-page">
       {/* Container for the logo and flag */}
@@ -24,10 +37,11 @@ const WelcomePage = () => {
       <h1>இலங்கை கோளரங்கத்திற்கு வரவேற்கிறோம்!</h1>
       <h1>Welcome to the Sri Lanka Planetarium!</h1>
       
+      {/* Language selection buttons */}
       <div className="language-selection">
-        <button>සිංහල</button>
-        <button>தமிழ்</button>
-        <button>English</button>
+        <button onClick={() => handleLanguageSelect("sinhala")}>සිංහල</button>
+        <button onClick={() => handleLanguageSelect("tamil")}>தமிழ்</button>
+        <button onClick={() => handleLanguageSelect("english")}>English</button>
       </div>
     </div>
   );
