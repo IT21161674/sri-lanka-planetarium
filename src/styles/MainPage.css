@@ -24,6 +24,7 @@
 }
 
 .bar-left {
+  margin-left: 25px;
   text-align: left;
 }
 
@@ -50,6 +51,7 @@
 .search-container {
   display: flex;
   align-items: center;
+  margin-right: 25px;
 }
 
 .search-bar {

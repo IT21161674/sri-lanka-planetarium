@@ -12,8 +12,7 @@ const MainPageEnglish = () => {
         </div>
         <div className="bar-right">
           <div className="contact-info">
-            <p>Phone: +94 11 123 4567</p>
-            <p>Email: info@slplanetarium.lk</p>
+            <p>Phone: +94 11 123 4567 | Email: info@slplanetarium.lk</p>
           </div>
           <div className="search-container">
             <input
