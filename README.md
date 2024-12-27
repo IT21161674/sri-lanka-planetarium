@@ -1,6 +1,6 @@
 # Sri Lanka Planetarium Website Redesign
 
-This project is a redesign of the official website of the **Sri Lanka Planetarium**. The goal is to create a modern, visually appealing, and user-friendly website that highlights the planetarium's role as a hub for astronomy education and exploration.
+This project is a redesign of the official website of the **Sri Lanka Planetarium**. The goal is to create a modern, visually appealing, and user-friendly website that highlights the planetarium's role as a hub for astronomy education and exploration. Additionally, the main reason for this project is to practice using GitHub, including learning how to work with branching, committing changes, creating pull requests, managing version control, and collaborating effectively in a simulated team environment.
 
 ## Technology Stack
 - **React.js**: For building the user interface.
