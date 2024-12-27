@@ -24,6 +24,15 @@ const MainPageEnglish = () => {
           </div>
         </div>
       </div>
+      <nav className="nav-bar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#exhibits">Exhibits</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <header className="main-header">
         <h1>Welcome to the Sri Lanka Planetarium</h1>
       </header>
