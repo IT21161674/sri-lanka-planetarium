@@ -27,10 +27,14 @@ const MainPageEnglish = () => {
       <nav className="nav-bar">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#exhibits">Exhibits</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#programs">About Us</a></li>
+          <li><a href="#events">Services</a></li>
+          <li><a href="#exhibits">Courses</a></li>
+          <li><a href="#contact">Gallery</a></li>
+          <li><a href="#contact">News & Events</a></li>
+          <li><a href="#contact">Sky Observing</a></li>
+          <li><a href="#contact">Downloads</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
       <header className="main-header">
